@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+}
+
+:root {
+    --color-texto-1: #000000;
+    --color-primario: #7fc797;
+    --color-secundario: #3c5e47;
+    --color-teciario: #00bbff;
+    --color-cuatro: #6a00f5;
+    --color-cinco: #ffffff;
+    --color-hover: #3c5e47;
+    --color-hover-2: #490f95;
+    --color-hover-3: #e3e3e3;
+    --fuente-principal: "New Amsterdam", sans-serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* La página ocupará al menos el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente el contenido */
+    height: 100px;
+    padding: 0 7%; /* Ajusta el padding horizontal */
+    background-color: var(--color-cuatro); /* Fondo opcional para el header */
+    color: var(--color-texto-1); /* Color de texto opcional para el header */
+}
+
+.tituloPrincipal {
+    font-family: var(--fuente-principal);
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+}
+
+.main {
+    flex: 1;
+    margin: 2% 10%; /* Ajusta el margen para mayor consistencia */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%;
+    height: 600px;
+}
+
+.textoAProcesar {
+    min-height: 40vh;
+    height: 80%;
+    width: 80%;
+    background-color: var(--color-primario);
+    border: 5px solid var(--color-texto-1); /* Ajusta el grosor y color del borde */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    padding: 1rem; /* Espaciado interno opcional */
+    box-sizing: border-box;
+    font-size: 2rem;
+    resize: none;
+}
+
+.terminos{
+    background-color: #000000;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    width: 80%;
+    margin-top: 5% ;
+}
+
+.textoTerminos{
+    padding: 5%;
+    font-size: 1.2rem;
+    color: azure;
+}
+
+.botones{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    margin-top: 10% ;
+}
+
+.botonEncriptar{
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    justify-content: center;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.botonDesencriptar{
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+    box-sizing: border-box;
+    background-color: var(--color-cuatro);
+    justify-content: center;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.botonEncriptar:hover{
+    background-color: var(--color-hover);
+}
+
+.botonDesencriptar:hover{
+    background-color: var(--color-hover-2);
+}
+
+.seccion2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40%;
+}
+
+.esperandoResultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15%;
+    box-sizing: border-box;
+}
+
+.muneco{
+    width: 40vh;
+    box-sizing: border-box;
+}
+
+.tituloEsperandoResultado{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 15%;
+    width: 40vh;
+    font-size: 1.8rem;
+}
+
+.parrafoEsperandoResultado{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 40vh;
+    font-size: 1.2rem;
+}
+
+.resultado {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 50%;
+}
+
+.textoResultado{
+    display: flex;
+    box-sizing: border-box;
+    width: 40vh;
+    height: 40vh;
+    background-color: var(--color-primario);
+    border: 5px solid var(--color-texto-1);
+    font-size: 2rem;
+    border-radius: 1rem;
+    overflow-wrap: anywhere;
+}
+
+.botonCopiar{
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+    box-sizing: border-box;
+    background-color: var(--color-cinco);
+    justify-content: center;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: 15%;
+
+}
+.botonCopiar:hover{
+    background-color: var(--color-hover-3);
+}
+
+.footer {
+    background-color: var(--color-cuatro);
+    box-sizing: border-box;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 1rem; 
+}
+
+.footerTexto{
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    margin: 10%;
+}
+
+
+

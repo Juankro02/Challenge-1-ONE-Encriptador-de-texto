@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body class="body">
+    <header class="header">
+        <h1 class="tituloPrincipal">Encriptador de texto</h1>
+    </header>
+    <main class="main">
+        <section class="seccion_1">
+            <div class="entradaTexto">
+                <textarea placeholder="Ingrese el texto a procesar" class="textoAProcesar"id="textoAProcesar"></textarea>
+            </div>
+            <div class="terminos">
+                <p class="textoTerminos">Por favor, ingresa solo texto en minusculas y sin acentos. <br>Tambien evita simbolos especiales.</p>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar();" class="botonEncriptar" id="botonEncriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="botonDesencriptar" id="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion_2">
+            <div class="esperandoResultado" id="esperandoResultado">
+                <img src="./assets/Muñeco.png" alt="Muñeco" class="muneco">
+                <h1 class="tituloEsperandoResultado">Ningun mensaje fue encontrado</h1>
+                <p class="parrafoEsperandoResultado">Ingresa el texto que quieras procesar</p>
+            </div>
+            <div class="resultado" id="resultado">
+                <p class="textoResultado" id="textoResultado"></p>
+                <button onclick="copiarTexto();" class="botonCopiar">Copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footerTexto">Desarrollado por Juankro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
